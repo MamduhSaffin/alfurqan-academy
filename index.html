@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Al-Furqan Academy offers personalised online Quran, Tajweed, Arabic language and Islamic Studies classes for children, teenagers and adults.">
+  <meta name="theme-color" content="#14532d">
+  <meta property="og:title" content="Al-Furqan Academy | Quran & Arabic Online">
+  <meta property="og:description" content="Personalised online Quran, Tajweed, Arabic and Islamic Studies classes.">
+  <meta property="og:type" content="website">
+  <title>Al-Furqan Academy | Quran & Arabic Online</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    :root{
+      --green-950:#0d2f1d;
+      --green-900:#123d26;
+      --green-800:#14532d;
+      --green-700:#1f6b3a;
+      --green-100:#eaf4ed;
+      --gold:#c6a15b;
+      --gold-light:#ecd69c;
+      --ink:#17211a;
+      --muted:#667067;
+      --paper:#f8faf7;
+      --white:#ffffff;
+      --line:#dfe7df;
+      --shadow:0 18px 55px rgba(18,61,38,.12);
+      --radius:22px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:"Poppins",sans-serif;
+      color:var(--ink);
+      background:var(--paper);
+      line-height:1.7;
+      overflow-x:hidden;
+    }
+    a{color:inherit}
+    button,input,select,textarea{font:inherit}
+    .container{width:min(1160px,calc(100% - 40px));margin:auto}
+    section{padding:88px 0}
+    .section-head{max-width:720px;margin:0 auto 48px;text-align:center}
+    .section-head h2{
+      font-family:"Amiri",serif;
+      font-size:clamp(2rem,4vw,3rem);
+      color:var(--green-900);
+      line-height:1.2;
+      margin:14px 0;
+    }
+    .section-head p{color:var(--muted)}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:7px 13px;border-radius:999px;
+      background:rgba(198,161,91,.14);color:#8a6b2d;
+      font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+    }
+
+    header{
+      position:sticky;top:0;z-index:50;
+      background:rgba(18,61,38,.96);color:#fff;
+      backdrop-filter:blur(12px);
+      box-shadow:0 4px 20px rgba(0,0,0,.1);
+    }
+    .nav-wrap{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:700}
+    .brand-mark{
+      width:42px;height:42px;border-radius:50%;
+      display:grid;place-items:center;background:var(--gold);color:var(--green-950);
+      font-size:1.2rem;
+    }
+    .brand span small{display:block;font-size:.72rem;font-weight:400;opacity:.8}
+    nav ul{list-style:none;display:flex;align-items:center;gap:24px}
+    nav a{text-decoration:none;font-size:.92rem;font-weight:500;opacity:.92}
+    nav a:hover{color:var(--gold-light)}
+    .menu-btn{display:none;border:0;background:none;color:#fff;font-size:1.45rem;cursor:pointer}
+
+    .hero{
+      min-height:calc(100vh - 76px);
+      display:flex;align-items:center;
+      color:#fff;
+      background:
+        linear-gradient(110deg,rgba(13,47,29,.96),rgba(20,83,45,.86)),
+        url("https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=1800&q=85") center/cover;
+      position:relative;overflow:hidden;
+    }
+    .hero:after{
+      content:"";position:absolute;width:600px;height:600px;border-radius:50%;
+      right:-250px;top:-180px;border:1px solid rgba(236,214,156,.23);
+      box-shadow:0 0 0 80px rgba(236,214,156,.04),0 0 0 160px rgba(236,214,156,.025);
+    }
+    .hero-grid{
+      position:relative;z-index:2;
+      display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:center;
+      padding:70px 0;
+    }
+    .hero h1{
+      font-family:"Amiri",serif;
+      font-size:clamp(3.2rem,7vw,5.8rem);
+      line-height:.98;
+      letter-spacing:-.02em;
+      margin:20px 0 22px;
+    }
+    .hero h1 span{color:var(--gold-light)}
+    .hero-copy{max-width:700px;color:rgba(255,255,255,.86);font-size:1.06rem}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+    .btn{
+      border:0;border-radius:999px;padding:14px 24px;
+      text-decoration:none;font-weight:700;
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      cursor:pointer;transition:.2s ease;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-gold{background:var(--gold);color:var(--green-950);box-shadow:0 12px 28px rgba(198,161,91,.22)}
+    .btn-light{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.35)}
+    .hero-card{
+      background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);
+      backdrop-filter:blur(14px);border-radius:28px;padding:30px;
+      box-shadow:0 25px 70px rgba(0,0,0,.22);
+    }
+    .arabic{
+      font-family:"Amiri",serif;font-size:3.3rem;line-height:1.3;color:var(--gold-light);
+      text-align:center;margin-bottom:12px;
+    }
+    .hero-card p{text-align:center;color:rgba(255,255,255,.8)}
+    .hero-points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+    .hero-point{
+      padding:14px;border-radius:16px;background:rgba(255,255,255,.08);
+      font-size:.86rem;text-align:center
+    }
+
+    .quick-strip{margin-top:-34px;position:relative;z-index:5}
+    .quick-grid{
+      background:#fff;border-radius:20px;box-shadow:var(--shadow);
+      display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden;
+    }
+    .quick-item{padding:24px;text-align:center;border-right:1px solid var(--line)}
+    .quick-item:last-child{border-right:0}
+    .quick-item i{color:var(--gold);font-size:1.35rem;margin-bottom:8px}
+    .quick-item strong{display:block;color:var(--green-900)}
+    .quick-item span{font-size:.82rem;color:var(--muted)}
+
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{
+      background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+      padding:28px;box-shadow:0 8px 25px rgba(18,61,38,.055);
+      transition:.2s ease;
+    }
+    .card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .icon{
+      width:52px;height:52px;border-radius:16px;background:var(--green-100);
+      color:var(--green-800);display:grid;place-items:center;font-size:1.25rem;margin-bottom:18px;
+    }
+    .card h3{font-size:1.12rem;color:var(--green-900);margin-bottom:8px}
+    .card p{font-size:.91rem;color:var(--muted)}
+
+    .about{background:#fff}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+    .about-panel{
+      min-height:480px;border-radius:30px;
+      background:
+        linear-gradient(145deg,rgba(13,47,29,.08),rgba(198,161,91,.15)),
+        url("https://images.unsplash.com/photo-1585036156171-384164a8c675?auto=format&fit=crop&w=1000&q=85") center/cover;
+      position:relative;overflow:hidden;
+    }
+    .about-badge{
+      position:absolute;left:24px;bottom:24px;background:#fff;border-radius:18px;
+      padding:18px 20px;box-shadow:var(--shadow);max-width:290px
+    }
+    .about-badge strong{color:var(--green-900);display:block}
+    .about-copy h2{
+      font-family:"Amiri",serif;font-size:clamp(2.3rem,5vw,3.5rem);
+      line-height:1.12;color:var(--green-900);margin:15px 0 20px;
+    }
+    .about-copy p{color:var(--muted);margin-bottom:14px}
+    .checklist{list-style:none;display:grid;gap:11px;margin-top:22px}
+    .checklist li{display:flex;gap:10px;align-items:flex-start}
+    .checklist i{color:var(--green-700);margin-top:6px}
+
+    .pricing{background:linear-gradient(180deg,#f3f7f2,#f8faf7)}
+    .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+    .price-card{
+      background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;position:relative;
+      box-shadow:0 8px 25px rgba(18,61,38,.055);
+    }
+    .price-card.featured{border:2px solid var(--gold);transform:translateY(-8px)}
+    .popular{
+      position:absolute;right:20px;top:18px;background:var(--gold);color:var(--green-950);
+      padding:5px 10px;border-radius:999px;font-size:.7rem;font-weight:700;
+    }
+    .price-card h3{color:var(--green-900)}
+    .price{font-size:2.3rem;font-weight:700;color:var(--green-800);margin:12px 0}
+    .price span{font-size:.8rem;color:var(--muted);font-weight:500}
+    .price-card ul{list-style:none;display:grid;gap:10px;margin:18px 0 25px}
+    .price-card li{font-size:.88rem;color:var(--muted)}
+    .price-card li i{color:var(--green-700);margin-right:8px}
+
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .step{
+      position:relative;background:#fff;border-radius:20px;padding:26px;
+      border:1px solid var(--line)
+    }
+    .step-num{
+      width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+      background:var(--green-800);color:#fff;font-weight:700;margin-bottom:14px
+    }
+    .step h3{color:var(--green-900);font-size:1rem;margin-bottom:6px}
+    .step p{color:var(--muted);font-size:.85rem}
+
+    .contact{
+      background:linear-gradient(135deg,var(--green-950),var(--green-800));color:#fff
+    }
+    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:start}
+    .contact-copy h2{
+      font-family:"Amiri",serif;font-size:clamp(2.5rem,5vw,3.8rem);line-height:1.1;margin:14px 0 18px
+    }
+    .contact-copy p{color:rgba(255,255,255,.8)}
+    .contact-method{
+      display:flex;gap:14px;align-items:center;margin-top:24px;
+      padding:18px;border:1px solid rgba(255,255,255,.16);border-radius:18px;background:rgba(255,255,255,.06)
+    }
+    .contact-method i{font-size:1.4rem;color:var(--gold-light)}
+    .contact-method a{text-decoration:none;font-weight:700}
+    .form-card{
+      background:#fff;color:var(--ink);border-radius:28px;padding:30px;box-shadow:0 30px 80px rgba(0,0,0,.22)
+    }
+    .form-card h3{color:var(--green-900);margin-bottom:20px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .field{margin-bottom:14px}
+    .field label{display:block;font-size:.8rem;font-weight:600;margin-bottom:6px}
+    .field input,.field select,.field textarea{
+      width:100%;border:1px solid #ccd8cd;background:#fbfcfa;border-radius:13px;
+      padding:12px 13px;outline:none;color:var(--ink)
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      border-color:var(--green-700);box-shadow:0 0 0 3px rgba(31,107,58,.1)
+    }
+    .form-note{font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center}
+
+    footer{background:#092519;color:rgba(255,255,255,.78);padding:38px 0}
+    .footer-row{display:flex;justify-content:space-between;gap:24px;align-items:center}
+    footer strong{color:#fff}
+    footer a{color:var(--gold-light);text-decoration:none}
+
+    @media(max-width:900px){
+      nav{
+        position:absolute;top:76px;left:0;right:0;background:var(--green-900);
+        max-height:0;overflow:hidden;transition:.25s ease
+      }
+      nav.open{max-height:420px}
+      nav ul{padding:18px 20px 24px;display:grid;gap:14px}
+      .menu-btn{display:block}
+      .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+      .hero-card{max-width:600px}
+      .quick-grid{grid-template-columns:1fr 1fr}
+      .quick-item:nth-child(2){border-right:0}
+      .cards,.price-grid{grid-template-columns:1fr 1fr}
+      .process-grid{grid-template-columns:1fr 1fr}
+      .price-card.featured{transform:none}
+    }
+
+    @media(max-width:620px){
+      .container{width:min(100% - 28px,1160px)}
+      section{padding:68px 0}
+      .hero-grid{padding:54px 0 72px}
+      .hero h1{font-size:3.35rem}
+      .hero-actions .btn{width:100%}
+      .quick-grid,.cards,.price-grid,.process-grid,.form-row{grid-template-columns:1fr}
+      .quick-item{border-right:0;border-bottom:1px solid var(--line)}
+      .quick-item:last-child{border-bottom:0}
+      .about-panel{min-height:390px}
+      .footer-row{display:grid;text-align:center;justify-items:center}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav-wrap">
+    <a class="brand" href="#home">
+      <span class="brand-mark"><i class="fa-solid fa-book-quran"></i></span>
+      <span>Al-Furqan Academy<small>Quran • Arabic • Islamic Studies</small></span>
+    </a>
+
+    <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav id="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#about">Teacher</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow"><i class="fa-solid fa-globe"></i> Online classes from Malaysia</span>
+        <h1>Learn <span>Quran</span> & Arabic with clarity and confidence.</h1>
+        <p class="hero-copy">
+          Personalised online lessons for children, teenagers and adults — from Quran reading and Tajweed to Arabic language and Islamic Studies.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#register"><i class="fa-solid fa-calendar-check"></i> Book a Trial Class</a>
+          <a class="btn btn-light" href="https://wa.me/60129153527?text=Assalamualaikum%20Ustaz%20Mamduh%2C%20I%20would%20like%20to%20know%20more%20about%20Al-Furqan%20Academy." target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="arabic" dir="rtl">وَقُل رَّبِّ زِدْنِي عِلْمًا</div>
+        <p>“My Lord, increase me in knowledge.”</p>
+        <div class="hero-points">
+          <div class="hero-point"><i class="fa-solid fa-user"></i><br>1-to-1 Learning</div>
+          <div class="hero-point"><i class="fa-solid fa-children"></i><br>Kids Friendly</div>
+          <div class="hero-point"><i class="fa-solid fa-laptop"></i><br>Online Classes</div>
+          <div class="hero-point"><i class="fa-solid fa-clock"></i><br>Flexible Schedule</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container quick-strip">
+    <div class="quick-grid">
+      <div class="quick-item"><i class="fa-solid fa-book-open"></i><strong>Quran</strong><span>Reading & Tajweed</span></div>
+      <div class="quick-item"><i class="fa-solid fa-language"></i><strong>Arabic</strong><span>From beginner onwards</span></div>
+      <div class="quick-item"><i class="fa-solid fa-mosque"></i><strong>Islamic Studies</strong><span>Age-appropriate learning</span></div>
+      <div class="quick-item"><i class="fa-solid fa-video"></i><strong>Live Online</strong><span>Zoom / Google Meet</span></div>
+    </div>
+  </div>
+
+  <section id="classes">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What you can learn</span>
+        <h2>Classes built around the student</h2>
+        <p>Lessons are adjusted according to age, current level, learning goals and pace.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="icon"><i class="fa-solid fa-book-quran"></i></div>
+          <h3>Quran Reading & Tajweed</h3>
+          <p>Build accurate reading, pronunciation, makhraj and practical Tajweed step by step.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>Quran Memorisation</h3>
+          <p>Structured memorisation with regular revision, correction and a sustainable pace.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon"><i class="fa-solid fa-language"></i></div>
+          <h3>Arabic Language</h3>
+          <p>Arabic letters, reading, vocabulary, conversation and foundational grammar according to level.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon"><i class="fa-solid fa-mosque"></i></div>
+          <h3>Islamic Studies</h3>
+          <p>Core Islamic knowledge, adab, worship and practical topics presented in an accessible way.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon"><i class="fa-solid fa-child-reaching"></i></div>
+          <h3>Kids Programme</h3>
+          <p>Interactive lessons using questions, activities and age-friendly explanations to keep children engaged.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+          <h3>Small Group Classes</h3>
+          <p>Learn with siblings, friends or a small group while keeping sessions interactive and focused.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-panel">
+        <div class="about-badge">
+          <strong>Ustaz Mamduh</strong>
+          Quran, Arabic & Islamic Education
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <span class="eyebrow">Your teacher</span>
+        <h2>Supportive teaching with clear, practical explanations.</h2>
+        <p>
+          Al-Furqan Academy is built around a simple goal: make Quran, Arabic and Islamic learning approachable and consistent for students wherever they are.
+        </p>
+        <p>
+          Lessons are adapted to the learner rather than forcing every student into the same pace or method.
+        </p>
+
+        <ul class="checklist">
+          <li><i class="fa-solid fa-circle-check"></i><span>Personalised lesson pace and learning goals</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>English, Malay and Arabic support where appropriate</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Suitable for beginners and continuing learners</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Online access for students in Malaysia and abroad</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Simple pricing</span>
+        <h2>Choose a starting point</h2>
+        <p>Start with a trial session, then discuss the most suitable learning arrangement based on your goals and schedule.</p>
+      </div>
+
+      <div class="price-grid">
+        <article class="price-card">
+          <h3>Trial Session</h3>
+          <div class="price">RM20 <span>/ 30 mins</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i>Initial level assessment</li>
+            <li><i class="fa-solid fa-check"></i>Learning goal discussion</li>
+            <li><i class="fa-solid fa-check"></i>Short teaching session</li>
+          </ul>
+          <a class="btn btn-gold" href="#register">Book Trial</a>
+        </article>
+
+        <article class="price-card featured">
+          <span class="popular">POPULAR</span>
+          <h3>Beginner Package</h3>
+          <div class="price">RM150 <span>/ month</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i>Regular online lessons</li>
+            <li><i class="fa-solid fa-check"></i>Quran + basic Tajweed</li>
+            <li><i class="fa-solid fa-check"></i>Learning support between classes</li>
+          </ul>
+          <a class="btn btn-gold" href="#register">Register Interest</a>
+        </article>
+
+        <article class="price-card">
+          <h3>Intensive Package</h3>
+          <div class="price">RM280 <span>/ month</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i>More intensive learning plan</li>
+            <li><i class="fa-solid fa-check"></i>Quran + Arabic + Islamic Studies</li>
+            <li><i class="fa-solid fa-check"></i>Progress-focused support</li>
+          </ul>
+          <a class="btn btn-gold" href="#register">Register Interest</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>Start in four simple steps</h2>
+      </div>
+
+      <div class="process-grid">
+        <div class="step"><div class="step-num">1</div><h3>Send your details</h3><p>Tell us the student's age, level, goals and preferred time.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Discuss your goals</h3><p>We confirm the most suitable class type and learning approach.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Join the trial</h3><p>Meet online and experience the teaching style before committing.</p></div>
+        <div class="step"><div class="step-num">4</div><h3>Begin learning</h3><p>Continue with a consistent schedule and a clear learning plan.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="register">
+    <div class="container contact-grid">
+      <div class="contact-copy">
+        <span class="eyebrow">Registration</span>
+        <h2>Ready to begin?</h2>
+        <p>Complete the form and tap the button. Your registration details will open directly in WhatsApp so you can send them to Ustaz Mamduh.</p>
+
+        <div class="contact-method">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div>
+            <small>WhatsApp</small><br>
+            <a href="https://wa.me/60129153527" target="_blank" rel="noopener">+60 12-915 3527</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3><i class="fa-solid fa-user-plus"></i> Class Registration</h3>
+        <form id="registrationForm">
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full Name *</label>
+              <input id="name" type="text" required placeholder="Student / parent name">
+            </div>
+            <div class="field">
+              <label for="age">Age Group *</label>
+              <select id="age" required>
+                <option value="">Select</option>
+                <option>Child (5–12)</option>
+                <option>Teenager (13–17)</option>
+                <option>Adult (18+)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="country">Country / Location *</label>
+              <input id="country" type="text" required placeholder="e.g. Kuala Lumpur, Malaysia">
+            </div>
+            <div class="field">
+              <label for="classType">Class *</label>
+              <select id="classType" required>
+                <option value="">Select</option>
+                <option>Trial Session</option>
+                <option>Quran Reading & Tajweed</option>
+                <option>Quran Memorisation</option>
+                <option>Arabic Language</option>
+                <option>Islamic Studies</option>
+                <option>Kids Programme</option>
+                <option>Small Group Class</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="level">Current Level *</label>
+              <select id="level" required>
+                <option value="">Select</option>
+                <option>Complete beginner</option>
+                <option>Know Arabic letters</option>
+                <option>Can read slowly</option>
+                <option>Can read but need Tajweed correction</option>
+                <option>Intermediate / continuing learner</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="time">Preferred Time *</label>
+              <select id="time" required>
+                <option value="">Select</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+                <option>Weekend</option>
+                <option>Flexible</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="notes">Goals / Notes</label>
+            <textarea id="notes" rows="4" placeholder="Tell us what you would like to improve or learn..."></textarea>
+          </div>
+
+          <button class="btn btn-gold" style="width:100%" type="submit">
+            <i class="fa-brands fa-whatsapp"></i> Send Registration via WhatsApp
+          </button>
+
+          <p class="form-note">No information is stored on this website. The form simply prepares a WhatsApp message for you to send.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div><strong>Al-Furqan Academy</strong><br><small>Quran • Arabic • Islamic Studies</small></div>
+    <div>WhatsApp: <a href="https://wa.me/60129153527">+60 12-915 3527</a></div>
+    <div><small>© <span id="year"></span> Al-Furqan Academy. All rights reserved.</small></div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu(){
+    document.getElementById("nav").classList.toggle("open");
+  }
+
+  document.querySelectorAll("nav a").forEach(link=>{
+    link.addEventListener("click",()=>document.getElementById("nav").classList.remove("open"));
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  document.getElementById("registrationForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const age = document.getElementById("age").value;
+    const country = document.getElementById("country").value.trim();
+    const classType = document.getElementById("classType").value;
+    const level = document.getElementById("level").value;
+    const time = document.getElementById("time").value;
+    const notes = document.getElementById("notes").value.trim();
+
+    const message =
+      "Assalamualaikum Ustaz Mamduh. I would like to register / enquire about Al-Furqan Academy.\n\n" +
+      "Name: " + name + "\n" +
+      "Age Group: " + age + "\n" +
+      "Location: " + country + "\n" +
+      "Class: " + classType + "\n" +
+      "Current Level: " + level + "\n" +
+      "Preferred Time: " + time + "\n" +
+      "Goals / Notes: " + (notes || "-") + "\n\n" +
+      "Please let me know the next available class. Thank you.";
+
+    window.open("https://wa.me/60129153527?text=" + encodeURIComponent(message), "_blank");
+  });
+</script>
+
+</body>
+</html>
