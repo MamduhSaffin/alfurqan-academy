@@ -2,23 +2,27 @@
 
 **TGPU Legacy** stands for **Tok Guru Pulau Ubi Legacy**.
 
-This website continues the original Quran-teaching project under a new identity inspired by the legacy of Tok Guru Pulau Ubi. The main audience is Malay-speaking families and learners in Malaysia.
+TGPU Legacy is a Quran and Islamic education initiative inspired by the legacy of Tok Guru Pulau Ubi. The main audience is Malay-speaking children, families, teenagers and adults in Malaysia.
 
-## Focus
+## Website
 
+**https://mamduhsaffin.github.io/tgpu-legacy/**
+
+## Learning Focus
+
+- Asas Iqra' & Bacaan Al-Quran
 - Al-Quran Reading & Tajwid
-- Iqra' / beginner Quran reading
-- Quran Memorisation
+- Quran Memorisation / Hafazan
 - Arabic Language
 - Fardu Ain & Islamic Education
 - Kids Programme
 - 1-to-1 and small-group online classes
-- Bahasa Melayu as the main teaching and website language
+- Bahasa Melayu as the main teaching language
 - Direct WhatsApp registration with Ustaz Mamduh
 
 ## Legacy
 
-TGPU is an abbreviation of **Tok Guru Pulau Ubi**, the title associated with Ustaz Mamduh's late grandfather. The project is intended to continue a family legacy of knowledge, education and service through Quran and Islamic learning.
+TGPU is an abbreviation of **Tok Guru Pulau Ubi**, the title associated with Ustaz Mamduh's late grandfather. The project continues a family legacy of knowledge, education and service through Quran and Islamic learning.
 
 The family also carries the name through **Surau Tok Guru Pulau Ubi** in their hometown.
 
@@ -26,10 +30,25 @@ The family also carries the name through **Surau Tok Guru Pulau Ubi** in their h
 
 WhatsApp: **+60 12-915 3527**
 
-## GitHub Pages
+## SEO Focus
 
-The website is currently published from the `main` branch and `/ (root)` folder.
+Primary search themes include:
+
+- kelas Al-Quran online Malaysia
+- kelas mengaji online
+- kelas Quran kanak-kanak
+- kelas Tajwid online
+- kelas Iqra online
+- kelas Hafazan online
+- kelas Bahasa Arab online Malaysia
+- kelas Fardu Ain online
+- TGPU Legacy
+- Tok Guru Pulau Ubi
+
+## Repository
+
+GitHub: https://github.com/MamduhSaffin/tgpu-legacy
+
+GitHub Pages publishes from the `main` branch and `/ (root)` folder.
 
 Main website file: `index.html`
-
-> Note: the repository URL still uses the previous `alfurqan-academy` slug. The public branding inside the website is now TGPU Legacy.
