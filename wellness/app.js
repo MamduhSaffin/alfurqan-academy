@@ -47,7 +47,9 @@ function setLanguage(lang){
  localStorage.setItem("tgpuNaturalsLang",lang);
 }
 document.querySelectorAll(".lang").forEach(btn=>btn.addEventListener("click",()=>setLanguage(btn.dataset.lang)));
-const saved=localStorage.getItem("tgpuNaturalsLang");if(saved)setLanguage(saved);
+const requested=new URLSearchParams(location.search).get("lang");
+const saved=localStorage.getItem("tgpuNaturalsLang");
+setLanguage(["ms","en","ar"].includes(requested)?requested:(saved||"ms"));
 const toggle=document.getElementById("menuToggle"),nav=document.getElementById("nav");
 toggle?.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open))});
 nav?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
