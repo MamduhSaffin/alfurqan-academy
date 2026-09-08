@@ -71,3 +71,15 @@ WhatsApp: **+60 12-915 3527**
 - `sitemap.xml` — search-engine sitemap
 
 GitHub Pages publishes from the `main` branch and repository root.
+
+## Naturals reference redesign — September 2026
+
+The `/wellness/` page follows the supplied family-wellness visual reference: a panoramic family hero, cream product cards, a watercolor heritage section, maroon WhatsApp banner and compact footer. The education pages retain their content and layout; a Naturals navigation link connects each language to the matching wellness language.
+
+- Language entry points: `wellness/?lang=ms`, `wellness/?lang=en`, `wellness/?lang=ar`. Arabic uses RTL. The selection updates the address, education links, enquiry text, image descriptions and page metadata, with a fallback when browser storage is unavailable.
+- Product arrows and the Learn navigation reveal the ingredient guide. The existing development roadmap, status information and FAQs remain in that expandable area.
+- Artwork is illustrative. All three product images and their visible captions identify concept packaging. Sacha Inchi is spelled correctly. No checkout, prices, dosage, certifications or product efficacy claims are presented.
+- Optimized artwork and locally served Caveat / Noto Naskh Arabic fonts are in `wellness/assets/`; the accompanying OFL files contain their licences. Botanical references link to Kew Science.
+- No build step or dependency installation is required. Publish the repository root as before.
+
+Before replacing the concepts with real products, verify the actual species, formulation, labels, supplier details and applicable product status. Replace the images, alt text and concept notices together in all three languages.
