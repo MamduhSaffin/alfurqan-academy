@@ -2,13 +2,21 @@
 
 **TGPU Legacy** stands for **Tok Guru Pulau Ubi Legacy**.
 
-TGPU Legacy is a Quran and Islamic education initiative inspired by the legacy of Tok Guru Pulau Ubi. The main audience is Malay-speaking children, families, teenagers and adults in Malaysia.
+TGPU Legacy is a family legacy platform inspired by the values associated with Tok Guru Pulau Ubi. The project is being developed through two complementary branches:
 
-## Website
+1. **TGPU Legacy Education** — Quran, Tajwid, Arabic and Islamic education.
+2. **TGPU Naturals** — a developing family wellness initiative focused first on responsible education about traditional and natural ingredients.
 
-**https://mamduhsaffin.github.io/tgpu-legacy/**
+## Websites
 
-## Learning Focus
+- Main TGPU Legacy website: **https://mamduhsaffin.github.io/tgpu-legacy/**
+- TGPU Naturals: **https://mamduhsaffin.github.io/tgpu-legacy/wellness/**
+
+Both experiences support Bahasa Melayu, English and Arabic.
+
+## TGPU Legacy Education
+
+Current learning focus includes:
 
 - Asas Iqra' & Bacaan Al-Quran
 - Al-Quran Reading & Tajwid
@@ -20,9 +28,30 @@ TGPU Legacy is a Quran and Islamic education initiative inspired by the legacy o
 - Bahasa Melayu as the main teaching language
 - Direct WhatsApp registration with Ustaz Mamduh
 
+## TGPU Naturals
+
+TGPU Naturals is currently in an early development and educational stage.
+
+The initial family product concepts are:
+
+- Kunyit Hitam
+- Tongkat Ali
+- Sacha Inchi
+
+The wellness website currently focuses on:
+
+- family and brand story
+- general ingredient education
+- concept product presentation
+- regulatory and business-development roadmap
+- BM / English / Arabic content
+- WhatsApp enquiries and project updates
+
+**Important:** concept visuals are not final product packaging. The website does not make medical treatment claims and does not currently present the developing products as registered products or enable direct online checkout. Actual formulation, labels, manufacturer/supplier information, classification and regulatory details will be updated after verification.
+
 ## Legacy
 
-TGPU is an abbreviation of **Tok Guru Pulau Ubi**, the title associated with Ustaz Mamduh's late grandfather. The project continues a family legacy of knowledge, education and service through Quran and Islamic learning.
+TGPU is an abbreviation of **Tok Guru Pulau Ubi**, the title associated with Ustaz Mamduh's late grandfather. The project continues a family legacy of knowledge, education, service and responsible enterprise.
 
 The family also carries the name through **Surau Tok Guru Pulau Ubi** in their hometown.
 
@@ -30,25 +59,15 @@ The family also carries the name through **Surau Tok Guru Pulau Ubi** in their h
 
 WhatsApp: **+60 12-915 3527**
 
-## SEO Focus
+## Repository Structure
 
-Primary search themes include:
+- `index.html` — Bahasa Melayu education homepage
+- `en.html` — English education homepage
+- `ar.html` — Arabic education homepage
+- `learn*.html` — education learning hub
+- `wellness/index.html` — TGPU Naturals website
+- `wellness/styles.css` — responsive TGPU Naturals styling
+- `wellness/app.js` — trilingual TGPU Naturals interactions
+- `sitemap.xml` — search-engine sitemap
 
-- kelas Al-Quran online Malaysia
-- kelas mengaji online
-- kelas Quran kanak-kanak
-- kelas Tajwid online
-- kelas Iqra online
-- kelas Hafazan online
-- kelas Bahasa Arab online Malaysia
-- kelas Fardu Ain online
-- TGPU Legacy
-- Tok Guru Pulau Ubi
-
-## Repository
-
-GitHub: https://github.com/MamduhSaffin/tgpu-legacy
-
-GitHub Pages publishes from the `main` branch and `/ (root)` folder.
-
-Main website file: `index.html`
+GitHub Pages publishes from the `main` branch and repository root.
