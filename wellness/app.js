@@ -38,12 +38,22 @@ statusEyebrow:"الوضع الحالي",statusTitle:"غير مطروح للبي�
 faqTitle:"أسئلة قد تطرحها العائلة والعملاء مستقبلاً.",faq1q:"هل يمكنني الطلب الآن؟",faq1a:"ليس عبر هذا الموقع حالياً. نحن نعيد تنظيم المنتجات ونتحقق أولاً من المتطلبات التنظيمية.",faq2q:"هل هذه الصور حقيقية؟",faq2a:"لا. إنها تصورات أولية تساعد عائلتنا على تصور اتجاه العلامة، وستحل محلها الصور الحقيقية لاحقاً.",faq3q:"هل تقدم TGPU Naturals نصائح طبية؟",faq3a:"لا. يقدم الموقع معلومات تعليمية عامة ولا يغني عن الاستشارة الصحية المهنية.",faq4q:"كيف أتابع التطورات؟",faq4a:"تواصل معنا عبر واتساب وأخبرنا أنك ترغب في متابعة تحديثات TGPU Naturals.",
 contactEyebrow:"نمُ معاً",contactTitle:"هل ترغب في متابعة TGPU Naturals؟",contactText:"يمكنك السؤال عن هذا المشروع العائلي أو مشاركة رأيك أو تسجيل اهتمامك لتلقي التحديثات بعد تأكيد المنتجات الفعلية ووضعها التنظيمي.",contactBtn:"واتساب TGPU Legacy",footerText:"إرث عائلي • علم • طبيعة • مستقبل أكثر إشراقاً",educationShort:"التعليم"
 }};
+const educationPages={ms:"../",en:"../en.html",ar:"../ar.html"};
+const whatsappMessages={
+ ms:"Assalamualaikum, saya ingin tahu perkembangan TGPU Naturals.",
+ en:"Assalamualaikum, I would like to know more about the TGPU Naturals project and receive updates.",
+ ar:"السلام عليكم، أود معرفة المزيد عن مشروع TGPU Naturals ومتابعة مستجداته."
+};
 function setLanguage(lang){
  const dict=translations[lang]||translations.ms;
  document.documentElement.lang=lang;
  document.documentElement.dir=lang==="ar"?"rtl":"ltr";
  document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.dataset.i18n;if(dict[key])el.textContent=dict[key]});
  document.querySelectorAll(".lang").forEach(b=>b.classList.toggle("active",b.dataset.lang===lang));
+ const educationLink=document.getElementById("educationSiteLink");
+ if(educationLink) educationLink.href=educationPages[lang]||educationPages.ms;
+ const wa=document.getElementById("whatsappLink");
+ if(wa) wa.href="https://wa.me/60129153527?text="+encodeURIComponent(whatsappMessages[lang]||whatsappMessages.ms);
  localStorage.setItem("tgpuNaturalsLang",lang);
 }
 document.querySelectorAll(".lang").forEach(btn=>btn.addEventListener("click",()=>setLanguage(btn.dataset.lang)));
