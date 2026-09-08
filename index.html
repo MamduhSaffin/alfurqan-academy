@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TGPU Legacy ialah perniagaan berdaftar SSM yang menyediakan kelas Al-Quran online, Tajwid, Iqra’, Hafazan, Bahasa Arab dan Pendidikan Islam untuk kanak-kanak, remaja dan dewasa di Malaysia dalam Bahasa Melayu.">
+  <meta name="description" content="TGPU Legacy ialah perniagaan berdaftar SSM yang menyediakan kelas Al-Quran online, Tajwid, Iqra’, Hafazan, Bahasa Arab dan Pendidikan Islam untuk kanak-kanak, remaja dan dewasa.">
   <meta name="keywords" content="kelas Al-Quran online Malaysia, kelas mengaji online, kelas Quran kanak-kanak, kelas Tajwid online, kelas Iqra online, kelas Hafazan online, kelas Bahasa Arab online Malaysia, kelas Fardu Ain online, TGPU Legacy, Tok Guru Pulau Ubi, Ustaz Mamduh">
   <meta name="author" content="TGPU Legacy">
   <meta name="theme-color" content="#123d26">
@@ -15,10 +15,12 @@
   <link rel="apple-touch-icon" href="assets/favicon-512.png">
   <link rel="preload" as="image" href="assets/tgpu-logo.png">
   <link rel="alternate" hreflang="ms-MY" href="https://mamduhsaffin.github.io/tgpu-legacy/">
+  <link rel="alternate" hreflang="en" href="https://mamduhsaffin.github.io/tgpu-legacy/en.html">
+  <link rel="alternate" hreflang="ar" href="https://mamduhsaffin.github.io/tgpu-legacy/ar.html">
   <link rel="alternate" hreflang="x-default" href="https://mamduhsaffin.github.io/tgpu-legacy/">
 
   <meta property="og:title" content="TGPU Legacy | Kelas Al-Quran Online Malaysia">
-  <meta property="og:description" content="Mewarisi ilmu, membina generasi Al-Quran. Kelas Al-Quran, Tajwid, Hafazan, Bahasa Arab dan Pendidikan Islam dalam Bahasa Melayu.">
+  <meta property="og:description" content="Mewarisi ilmu, membina generasi Al-Quran. Kelas Al-Quran, Tajwid, Hafazan, Bahasa Arab dan Pendidikan Islam secara online.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ms_MY">
   <meta property="og:url" content="https://mamduhsaffin.github.io/tgpu-legacy/">
@@ -30,7 +32,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://mamduhsaffin.github.io/tgpu-legacy/assets/tgpu-social-preview.jpg">
   <meta name="twitter:title" content="TGPU Legacy | Kelas Al-Quran Online Malaysia">
-  <meta name="twitter:description" content="Kelas Al-Quran, Tajwid, Hafazan, Bahasa Arab dan Pendidikan Islam secara online dalam Bahasa Melayu.">
+  <meta name="twitter:description" content="Mewarisi ilmu, membina generasi Al-Quran. Kelas Al-Quran, Tajwid, Hafazan, Bahasa Arab dan Pendidikan Islam secara online.">
 
   <title>TGPU Legacy | Kelas Al-Quran Online Malaysia</title>
 
@@ -107,6 +109,24 @@
     nav ul{list-style:none;display:flex;align-items:center;gap:22px}
     nav a{text-decoration:none;font-size:.88rem;font-weight:500;opacity:.92}
     nav a:hover{color:var(--gold-light)}
+    .lang-switch{
+      display:flex;align-items:center;gap:5px;padding:4px;
+      border:1px solid rgba(255,255,255,.22);border-radius:999px;
+      background:rgba(255,255,255,.08);margin-left:auto;
+    }
+    .lang-switch a{
+      min-width:38px;padding:6px 9px;border-radius:999px;text-align:center;
+      text-decoration:none;font-size:.72rem;font-weight:700;line-height:1.2;
+      color:rgba(255,255,255,.84);transition:.2s ease;
+    }
+    .lang-switch a:hover{background:rgba(255,255,255,.12);color:#fff}
+    .lang-switch a.active{background:var(--gold);color:var(--green-950)}
+    html[dir="rtl"] body{font-family:"Amiri","Poppins",sans-serif}
+    html[dir="rtl"] .legacy-quote{border-left:0;border-right:4px solid var(--gold);border-radius:16px 0 0 16px}
+    html[dir="rtl"] .price-card li i{margin-right:0;margin-left:8px}
+    html[dir="rtl"] .faq summary{padding:18px 0 18px 32px}
+    html[dir="rtl"] .faq summary::after{right:auto;left:0}
+    html[dir="rtl"] .field input,html[dir="rtl"] .field select,html[dir="rtl"] .field textarea{text-align:right}
     .menu-btn{display:none;border:0;background:none;color:#fff;font-size:1.45rem;cursor:pointer}
 
     .hero{
@@ -540,6 +560,12 @@
       <span class="brand-mark"><img src="assets/favicon-512.png" alt="" width="48" height="48"></span>
       <span class="brand-name">TGPU Legacy<small>Tok Guru Pulau Ubi • Warisan Ilmu</small></span>
     </a>
+
+    <div class="lang-switch" aria-label="Pilihan bahasa">
+      <a class="active" href="./" lang="ms" hreflang="ms">BM</a>
+      <a href="en.html" lang="en" hreflang="en">EN</a>
+      <a href="ar.html" lang="ar" hreflang="ar">العربية</a>
+    </div>
 
     <button class="menu-btn" aria-label="Buka menu" onclick="toggleMenu()">
       <i class="fa-solid fa-bars"></i>
