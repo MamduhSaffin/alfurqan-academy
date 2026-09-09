@@ -26,7 +26,8 @@ const translations = {
     "educationLink": "Lawati laman pendidikan TGPU Legacy →",
     "productsEyebrow": "PRODUK KAMI",
     "productsTitle": "TGPU Naturals",
-    "productsIntro": "Pembungkusan konsep sahaja. Label akhir dan maklumat produk masih dalam pengesahan. Belum ditawarkan untuk jualan.",
+    "productsIntro": "Visual Kunyit Hitam dan Sacha Inchi diperkemas berdasarkan pembungkusan sebenar keluarga kami. Tongkat Ali masih menggunakan visual konsep sementara menunggu foto sebenar. Maklumat label, formulasi dan status produk masih dalam pengesahan; laman ini untuk pertanyaan buat masa ini.",
+    "actualVisualBadge": "VISUAL DIPERKEMAS DARIPADA PRODUK SEBENAR",
     "conceptBadge": "PEMBUNGKUSAN KONSEP",
     "kunyitTitle": "Kunyit Hitam",
     "kunyitDesc": "Rizom tradisional yang dikenali dengan warna dalamnya yang gelap dan tempatnya dalam tradisi herba tempatan.",
@@ -90,13 +91,13 @@ const translations = {
     "switchLabel": "Terokai TGPU Legacy",
     "skip": "Terus ke kandungan",
     "sourceLabel": "Rujukan botani: Kew Science",
-    "artNote": "Gambaran ilustrasi keluarga dan warisan. Gambar produk ialah konsep pembungkusan.",
+    "artNote": "Gambaran keluarga dan warisan bersifat ilustrasi. Visual Kunyit Hitam dan Sacha Inchi diperkemas daripada pembungkusan sebenar; Tongkat Ali masih visual konsep.",
     "copyright": "TGPU Legacy · TGPU Naturals",
     "metaDescription": "Kenali TGPU Naturals: warisan keluarga dan maklumat jelas tentang Kunyit Hitam, Tongkat Ali dan Sacha Inchi. Pembungkusan konsep; pertanyaan sahaja.",
     "heroAlt": "Ilustrasi keluarga Melayu menikmati pemandangan gunung berkabus dari beranda kayu.",
-    "kunyitAlt": "Konsep pek Kunyit Hitam TGPU Naturals berwarna marun dengan rizom gelap dan daun.",
+    "kunyitAlt": "Visual produk Kunyit Hitam yang diperkemas berdasarkan botol dan pembungkusan sebenar.",
     "tongkatAlt": "Konsep botol Tongkat Ali TGPU Naturals hijau bertutup emas dengan akar dan daun.",
-    "sachiAlt": "Konsep pek Sacha Inchi TGPU Naturals berwarna krim dengan lenggai biji dan daun."
+    "sachiAlt": "Visual produk Sacha Inchi yang diperkemas berdasarkan botol dan pembungkusan sebenar."
   },
   "en": {
     "notice": "This is an educational and brand-development platform. The displayed product concepts are not offered for sale until their regulatory status is confirmed.",
@@ -125,7 +126,8 @@ const translations = {
     "educationLink": "Visit the TGPU Legacy education website →",
     "productsEyebrow": "OUR PRODUCTS",
     "productsTitle": "TGPU Naturals",
-    "productsIntro": "Concept packaging only. Final labels and product details are still being verified. Not yet available for sale.",
+    "productsIntro": "Kunyit Hitam and Sacha Inchi visuals have been polished from our family’s actual packaging. Tongkat Ali still uses a temporary concept visual while we wait for the real product photo. Label, formulation and regulatory details are still being verified; this site is for enquiries at this stage.",
+    "actualVisualBadge": "POLISHED FROM ACTUAL PRODUCT PACKAGING",
     "conceptBadge": "CONCEPT PACKAGING",
     "kunyitTitle": "Kunyit Hitam",
     "kunyitDesc": "A traditional rhizome known for its deep, dark colour and its place in local herbal traditions.",
@@ -189,13 +191,13 @@ const translations = {
     "switchLabel": "Explore TGPU Legacy",
     "skip": "Skip to content",
     "sourceLabel": "Botanical reference: Kew Science",
-    "artNote": "Illustrative family and heritage scenes. Product images are packaging concepts.",
+    "artNote": "Family and heritage scenes are illustrative. Kunyit Hitam and Sacha Inchi visuals are polished from actual packaging; Tongkat Ali remains a concept visual.",
     "copyright": "TGPU Legacy · TGPU Naturals",
     "metaDescription": "Discover TGPU Naturals: family heritage and clear information about Kunyit Hitam, Tongkat Ali and Sacha Inchi. Concept packaging; enquiries only.",
     "heroAlt": "Illustrative Malay family looking over a misty mountain landscape from a wooden veranda.",
-    "kunyitAlt": "Maroon TGPU Naturals Kunyit Hitam concept pouch with dark rhizomes and leaves.",
+    "kunyitAlt": "Polished Kunyit Hitam product visual based on the family’s actual bottle and packaging.",
     "tongkatAlt": "Green TGPU Naturals Tongkat Ali concept bottle with a gold cap, roots and leaves.",
-    "sachiAlt": "Cream TGPU Naturals Sacha Inchi concept pouch with seed pods and leaves."
+    "sachiAlt": "Polished Sacha Inchi product visual based on the family’s actual bottle and packaging."
   },
   "ar": {
     "notice": "هذه منصة تعليمية لتطوير العلامة. المنتجات التصورية المعروضة ليست مطروحة للبيع إلى أن يتم تأكيد وضعها التنظيمي.",
@@ -224,7 +226,8 @@ const translations = {
     "educationLink": "زيارة موقع TGPU Legacy التعليمي ←",
     "productsEyebrow": "منتجاتنا",
     "productsTitle": "TGPU Naturals",
-    "productsIntro": "العبوات تصورات مبدئية فقط. الملصقات النهائية ومعلومات المنتجات قيد التحقق. المنتجات غير مطروحة للبيع حالياً.",
+    "productsIntro": "تم تحسين صور الكركم الأسود وساشا إنشي استناداً إلى العبوات الفعلية لدى العائلة، بينما لا تزال صورة تونغكات علي تصوراً مؤقتاً إلى حين وصول صورة المنتج الحقيقي. لا تزال بيانات الملصق والتركيبة والوضع التنظيمي قيد التحقق، والموقع مخصص للاستفسارات حالياً.",
+    "actualVisualBadge": "صورة مُحسّنة استناداً إلى المنتج الفعلي",
     "conceptBadge": "تصور مبدئي للعبوة",
     "kunyitTitle": "الكركم الأسود",
     "kunyitDesc": "نبات جذموري تقليدي يُعرف بلونه الداخلي الداكن ومكانته في الثقافة العشبية المحلية.",
@@ -288,13 +291,13 @@ const translations = {
     "switchLabel": "استكشف TGPU Legacy",
     "skip": "انتقل إلى المحتوى",
     "sourceLabel": "مرجع نباتي: كيو للعلوم",
-    "artNote": "مشاهد توضيحية للعائلة والتراث. صور المنتجات تصورات مبدئية للعبوات.",
+    "artNote": "مشاهد العائلة والتراث توضيحية. صور الكركم الأسود وساشا إنشي محسّنة استناداً إلى العبوات الفعلية، بينما تظل صورة تونغكات علي تصوراً مبدئياً.",
     "copyright": "TGPU Legacy · TGPU Naturals",
     "metaDescription": "تعرّف على TGPU Naturals: إرث عائلي ومعلومات واضحة عن الكركم الأسود وتونغكات علي وساشا إنشي. عبوات تصورية وللاستفسار فقط.",
     "heroAlt": "مشهد توضيحي لعائلة ملايوية تتأمل جبالاً ضبابية من شرفة خشبية.",
-    "kunyitAlt": "تصور عبوة الكركم الأسود بلون خمري مع جذامير داكنة وأوراق.",
+    "kunyitAlt": "صورة محسّنة لمنتج الكركم الأسود استناداً إلى الزجاجة والعبوة الفعلية لدى العائلة.",
     "tongkatAlt": "تصور زجاجة تونغكات علي الخضراء بغطاء ذهبي مع جذور وأوراق.",
-    "sachiAlt": "تصور عبوة ساشا إنشي بلون كريمي مع ثمار وبذور وأوراق."
+    "sachiAlt": "صورة محسّنة لمنتج ساشا إنشي استناداً إلى الزجاجة والعبوة الفعلية لدى العائلة."
   }
 };
 'use strict';
