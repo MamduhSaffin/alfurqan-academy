@@ -74,7 +74,8 @@ const translations = {
     "contactEyebrow": "BERKEMBANG BERSAMA",
     "contactTitle": "Pertanyaan Produk / Hubungi Kami",
     "contactText": "Untuk maklumat dan pertanyaan sahaja. Produk belum ditawarkan untuk jualan.",
-    "contactBtn": "Berbual dengan Kami di WhatsApp",
+    "contactBtn": "WhatsApp Jannati",
+    "contactPerson": "Pegawai pertanyaan produk: Jannati",
     "footerText": "Insan · Alam · Keluarga · Masa Depan Lebih Cerah",
     "educationShort": "Pendidikan",
     "heroSignature": "Keluarga Bahagia,\nEsok Lebih Bermakna",
@@ -172,7 +173,8 @@ const translations = {
     "contactEyebrow": "GROW WITH US",
     "contactTitle": "Product Enquiries / Get in Touch",
     "contactText": "For information and enquiries only. Products are not yet offered for sale.",
-    "contactBtn": "Chat with Us on WhatsApp",
+    "contactBtn": "WhatsApp Jannati",
+    "contactPerson": "Product enquiries: Jannati",
     "footerText": "People · Nature · Family · A Brighter Tomorrow",
     "educationShort": "Education",
     "heroSignature": "Good Families,\nBrighter Tomorrows",
@@ -270,7 +272,8 @@ const translations = {
     "contactEyebrow": "نمُ معاً",
     "contactTitle": "استفسارات المنتجات / تواصل معنا",
     "contactText": "للمعلومات والاستفسارات فقط. المنتجات غير مطروحة للبيع حالياً.",
-    "contactBtn": "تحدث معنا عبر واتساب",
+    "contactBtn": "واتساب جنتي",
+    "contactPerson": "استفسارات المنتجات: جنتي",
     "footerText": "الإنسان · الطبيعة · العائلة · غد أكثر إشراقاً",
     "educationShort": "التعليم",
     "heroSignature": "عائلات سعيدة،\nوغد أكثر إشراقاً",
@@ -297,7 +300,7 @@ const translations = {
 'use strict';
 const languages=['ms','en','ar'];
 const educationPages={ms:'../',en:'../en.html',ar:'../ar.html'};
-const whatsappMessages={ms:'Assalamualaikum, saya ingin tahu perkembangan TGPU Naturals.',en:'Assalamualaikum, I would like to learn about TGPU Naturals and receive project updates.',ar:'السلام عليكم، أود معرفة المزيد عن مشروع TGPU Naturals ومتابعة مستجداته.'};
+const whatsappMessages={ms:'Assalamualaikum Jannati, saya ingin bertanya tentang produk TGPU Naturals.',en:'Assalamualaikum Jannati, I would like to ask about TGPU Naturals products.',ar:'السلام عليكم جنتي، أود الاستفسار عن منتجات TGPU Naturals.'};
 const toggle=document.getElementById('menuToggle'),nav=document.getElementById('nav');
 let currentLanguage='ms';
 function closeMenu(focus=false){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label',translations[currentLanguage].menuOpen);if(focus)toggle.focus();}
@@ -309,7 +312,7 @@ function setLanguage(candidate,updateUrl=false){
  document.querySelectorAll('[data-i18n-aria]').forEach(el=>el.setAttribute('aria-label',dict[el.dataset.i18nAria]));
  document.querySelectorAll('.lang').forEach(el=>{const active=el.dataset.lang===lang;el.classList.toggle('active',active);el.setAttribute('aria-pressed',String(active));const u=new URL(location.href);u.searchParams.set('lang',el.dataset.lang);el.href=u.pathname+u.search+u.hash;});
  document.querySelectorAll('[data-education]').forEach(el=>el.href=educationPages[lang]);
- document.getElementById('whatsappLink').href='https://wa.me/60129153527?text='+encodeURIComponent(whatsappMessages[lang]);
+ document.getElementById('whatsappLink').href='https://wa.me/60193930358?text='+encodeURIComponent(whatsappMessages[lang]);
  document.querySelector('meta[name="description"]').content=dict.metaDescription;document.querySelector('meta[property="og:description"]').content=dict.metaDescription;
  const canonical='https://mamduhsaffin.github.io/tgpu-legacy/wellness/'+(lang==='ms'?'':'?lang='+lang);
  document.querySelector('link[rel="canonical"]').href=canonical;document.querySelector('meta[property="og:url"]').content=canonical;
