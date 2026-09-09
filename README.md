@@ -83,3 +83,12 @@ The `/wellness/` page follows the supplied family-wellness visual reference: a p
 - No build step or dependency installation is required. Publish the repository root as before.
 
 Before replacing the concepts with real products, verify the actual species, formulation, labels, supplier details and applicable product status. Replace the images, alt text and concept notices together in all three languages.
+
+## Legacy landing-page redesign — September 2026
+
+The Malay, English and Arabic homepages follow the approved cream, green and gold landing-page design, with a teaching hero, arched heritage artwork, three learning pillars, four programs, impact band, community cards and footer.
+
+- Community cards use geometric avatars and existing teaching values. Unverified mockup student counts, years and named testimonials are not published.
+- `classes.html`, `classes-en.html` and `classes-ar.html` preserve the full existing class offering, teacher information, fees, FAQs and WhatsApp registration. Previous homepage bookmarks for registration, fees, FAQ, international and SSM content route to the matching class page.
+- Artwork in `assets/legacy/` is illustrative, inspired by the approved design; it is not a photograph of the actual teacher, students or Surau Tok Guru Pulau Ubi. Community avatars are SVG geometry and contain no portraits.
+- The learning hub and TGPU Naturals keep their existing routes. Publishing remains GitHub Pages from the repository root; no build step is needed.
