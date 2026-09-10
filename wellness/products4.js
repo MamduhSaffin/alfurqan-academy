@@ -2,81 +2,122 @@
   const extra={
     ms:{
       heroLead:'TGPU Legacy meneroka kesejahteraan semula jadi melalui empat produk keluarga berasaskan bahan tradisional: Kunyit Hitam, Tongkat Ali, Sacha Inchi dan Moringa. Kami berkongsi maklumat secara ringkas dan berhati-hati agar komuniti dapat mengenali bahan dan perkembangan produk dengan lebih jelas.',
-      productsIntro:'Kini empat produk keluarga telah dikenal pasti: Kunyit Hitam, Tongkat Ali, Sacha Inchi dan Moringa. Foto Tongkat Ali dan Moringa diambil daripada stok sebenar keluarga. Harga yang dipaparkan ialah harga jualan cadangan TGPU sebelum pelancaran rasmi dan boleh disemak semula. Maklumat label, formulasi dan status regulatori masih dalam pengesahan.',
-      actualVisualBadge:'BERDASARKAN PRODUK SEBENAR',
-      faq2a:'Ya. Visual produk kini berasaskan foto atau pembungkusan produk sebenar keluarga; imej mungkin dikecilkan, dipotong atau diperkemas untuk susun atur laman. Kami tidak mengubah fakta pada label produk.',
-      artNote:'Gambaran keluarga dan warisan bersifat ilustrasi. Visual produk berasaskan foto atau pembungkusan sebenar keluarga dan disusun semula untuk persembahan laman.',
       metaDescription:'Kenali TGPU Naturals: empat produk keluarga — Kunyit Hitam, Tongkat Ali, Sacha Inchi dan Moringa — bersama maklumat bahan dan perkembangan produk.',
-      tongkatAlt:'Foto sebenar botol Softgel Tongkat Ali Extra Strength daripada stok keluarga. Foto sumber menunjukkan pelekat harga kedai; harga jualan cadangan TGPU dipaparkan berasingan.',
-      moringaTitle:'Moringa',
-      moringaDesc:'Moringa oleifera ialah tumbuhan yang ditanam secara meluas di kawasan tropika dan subtropika. Daun dan bahagian tumbuhannya telah lama digunakan dalam makanan serta amalan tradisional di pelbagai tempat.',
+      posterTagline:'KESEJAHTERAAN SEMULA JADI • MASA DEPAN LEBIH CERAH',
+      posterMotto:'Kebaikan Alam, Untuk Diri yang Lebih Baik',
+      posterMoringaDesc:'Moringa oleifera ialah tumbuhan tropika yang telah lama dikenali dalam makanan dan amalan tradisional di pelbagai tempat.',
+      posterTongkatDesc:'Eurycoma longifolia ialah tumbuhan Asia Tenggara yang terkenal dalam budaya herba tradisional serantau.',
+      posterSachaDesc:'Plukenetia volubilis ialah tumbuhan berbiji dari Amerika Selatan yang dikenali sebagai Sacha Inchi.',
+      posterKunyitDesc:'Curcuma caesia ialah rizom yang dikenali sebagai Kunyit Hitam dan mempunyai sejarah dalam tradisi herba tempatan.',
+      posterNatural:'BAHAN SEMULA JADI',
+      posterFamily:'NILAI KELUARGA',
+      posterInfo:'MAKLUMAT JELAS',
+      posterTomorrow:'MASA DEPAN CERAH',
+      posterSign:'Oleh TGPU Naturals\nBerakar pada Warisan\nBerkembang untuk Generasi',
+      softgel:'60 Softgel',
       whatMoringa:'Apakah Moringa?',
       whatMoringaText:'Moringa ialah Moringa oleifera, sejenis pokok tropika yang dikenali di banyak negara. Maklumat di laman ini menerangkan identiti bahan secara umum dan bukan dakwaan perubatan bagi produk tertentu.',
-      moringaAlt:'Foto sebenar botol Softgel Moringa Oleifera 60 softgel daripada stok keluarga.',
-      plannedPrice:'Harga jualan cadangan',
-      sourceStickerNote:'Foto stok sebenar keluarga. Pelekat harga pada foto Tongkat Ali ialah pelekat kedai/sumber; RM50 ialah harga jualan cadangan TGPU.'
+      moringaTitle:'Moringa',
+      moringaAlt:'Foto sebenar botol Softgel Moringa Oleifera 60 softgel daripada stok keluarga.'
     },
     en:{
       heroLead:'TGPU Legacy is exploring natural wellness through four family products based on traditional ingredients: Kunyit Hitam, Tongkat Ali, Sacha Inchi and Moringa. We share clear, careful information so our community can understand the ingredients and product journey more easily.',
-      productsIntro:'Four family products are now identified: Kunyit Hitam, Tongkat Ali, Sacha Inchi and Moringa. The Tongkat Ali and Moringa images come from our family’s actual stock. Prices shown are planned TGPU retail prices before official launch and may still be reviewed. Label, formulation and regulatory details remain under verification.',
-      actualVisualBadge:'BASED ON ACTUAL PRODUCT',
-      faq2a:'Yes. Product visuals are now based on our family’s actual product photos or packaging; images may be resized, cropped or polished for the website layout. We do not alter factual label information.',
-      artNote:'Family and heritage scenes are illustrative. Product visuals are based on our family’s actual photos or packaging and are arranged for website presentation.',
       metaDescription:'Discover TGPU Naturals: four family products — Kunyit Hitam, Tongkat Ali, Sacha Inchi and Moringa — with clear ingredient information and product updates.',
-      tongkatAlt:'Actual photograph of the family-stock Softgel Tongkat Ali Extra Strength bottle. The source photo contains a shop price sticker; the planned TGPU retail price is shown separately.',
-      moringaTitle:'Moringa',
-      moringaDesc:'Moringa oleifera is a plant widely cultivated in tropical and subtropical regions. Its leaves and other plant parts have a long history of use in food and traditional practices in many places.',
+      posterTagline:'NATURAL WELLNESS • A HEALTHIER TOMORROW',
+      posterMotto:"Nature’s Goodness For A Better You",
+      posterMoringaDesc:'Moringa oleifera is a tropical plant with a long history of use in food and traditional practices in many regions.',
+      posterTongkatDesc:'Eurycoma longifolia is a Southeast Asian botanical well known in the region’s traditional herbal culture.',
+      posterSachaDesc:'Plukenetia volubilis is a seed-bearing plant from tropical South America, commonly known as Sacha Inchi.',
+      posterKunyitDesc:'Curcuma caesia is a dark-coloured rhizome known as Kunyit Hitam and associated with local herbal traditions.',
+      posterNatural:'NATURAL INGREDIENTS',
+      posterFamily:'FAMILY VALUES',
+      posterInfo:'CLEAR INFORMATION',
+      posterTomorrow:'A BRIGHTER TOMORROW',
+      posterSign:'By TGPU Naturals\nRooted in Tradition\nGrowing for Generations',
+      softgel:'60 Softgel',
       whatMoringa:'What is Moringa?',
       whatMoringaText:'Moringa is Moringa oleifera, a tropical tree known across many countries. This website describes the ingredient in general terms and does not make medical claims for a specific product.',
-      moringaAlt:'Actual photograph of the family-stock Softgel Moringa Oleifera 60-softgel bottle.',
-      plannedPrice:'Planned retail price',
-      sourceStickerNote:'Actual family-stock photo. The sticker visible on the Tongkat Ali bottle is a shop/source sticker; RM50 is the planned TGPU retail price.'
+      moringaTitle:'Moringa',
+      moringaAlt:'Actual photograph of the family-stock Softgel Moringa Oleifera 60-softgel bottle.'
     },
     ar:{
       heroLead:'تستكشف TGPU Legacy العافية الطبيعية من خلال أربعة منتجات عائلية تعتمد على مكونات تقليدية: الكركم الأسود، وتونغكات علي، وساشا إنشي، والمورينغا. ونقدّم معلومات واضحة وحذرة لتسهيل فهم المكونات ومسار تطوير المنتجات.',
-      productsIntro:'تم تحديد أربعة منتجات عائلية الآن: الكركم الأسود، وتونغكات علي، وساشا إنشي، والمورينغا. صور تونغكات علي والمورينغا مأخوذة من المخزون الفعلي لدى العائلة. الأسعار المعروضة أسعار بيع مقترحة من TGPU قبل الإطلاق الرسمي وقد تخضع للمراجعة. ولا تزال بيانات الملصق والتركيبة والوضع التنظيمي قيد التحقق.',
-      actualVisualBadge:'استناداً إلى المنتج الفعلي',
-      faq2a:'نعم. صور المنتجات مبنية الآن على صور فعلية أو عبوات حقيقية من مخزون العائلة، وقد يتم تصغيرها أو قصها أو تحسين عرضها لتناسب تصميم الموقع. ولا نغيّر المعلومات الواقعية الموجودة على الملصق.',
-      artNote:'مشاهد العائلة والتراث توضيحية. أما صور المنتجات فمبنية على صور أو عبوات فعلية من مخزون العائلة، ويقتصر التعديل على طريقة العرض في الموقع.',
       metaDescription:'تعرّف على TGPU Naturals ومنتجات العائلة الأربعة: الكركم الأسود، وتونغكات علي، وساشا إنشي، والمورينغا، مع معلومات واضحة عن المكونات وتحديثات المنتجات.',
-      tongkatAlt:'صورة فعلية لعبوة Softgel Tongkat Ali Extra Strength من مخزون العائلة. تظهر في الصورة الأصلية لصاقة سعر المتجر، بينما يُعرض سعر TGPU المقترح بشكل منفصل.',
-      moringaTitle:'مورينغا',
-      moringaDesc:'Moringa oleifera نبات يُزرع على نطاق واسع في المناطق المدارية وشبه المدارية. ولأوراقه وأجزاء أخرى منه تاريخ طويل من الاستخدام في الطعام والممارسات التقليدية في مناطق مختلفة.',
+      posterTagline:'عافية طبيعية • لغدٍ أكثر إشراقاً',
+      posterMotto:'خيرات الطبيعة لحياة أفضل',
+      posterMoringaDesc:'Moringa oleifera نبات استوائي له تاريخ طويل في الاستخدام الغذائي والممارسات التقليدية في مناطق متعددة.',
+      posterTongkatDesc:'Eurycoma longifolia نبات من جنوب شرق آسيا معروف في الثقافة العشبية التقليدية بالمنطقة.',
+      posterSachaDesc:'Plukenetia volubilis نبات استوائي من أمريكا الجنوبية ينتج بذوراً ويُعرف باسم ساشا إنشي.',
+      posterKunyitDesc:'Curcuma caesia نبات جذموري داكن اللون يُعرف باسم الكركم الأسود ويرتبط بالتقاليد العشبية المحلية.',
+      posterNatural:'مكونات طبيعية',
+      posterFamily:'قيم عائلية',
+      posterInfo:'معلومات واضحة',
+      posterTomorrow:'غد أكثر إشراقاً',
+      posterSign:'من TGPU Naturals\nجذور في التراث\nونمو للأجيال',
+      softgel:'60 كبسولة',
       whatMoringa:'ما المورينغا؟',
       whatMoringaText:'المورينغا هي Moringa oleifera، وهي شجرة استوائية معروفة في دول كثيرة. يشرح هذا الموقع هوية المكوّن بصورة عامة ولا يقدّم ادعاءات طبية لمنتج بعينه.',
-      moringaAlt:'صورة فعلية لعبوة Softgel Moringa Oleifera التي تحتوي على 60 كبسولة من مخزون العائلة.',
-      plannedPrice:'سعر البيع المقترح',
-      sourceStickerNote:'صورة فعلية من مخزون العائلة. اللصاقة الظاهرة على عبوة تونغكات علي هي لصاقة متجر/مصدر؛ أما 50 رينغيت فهو سعر البيع المقترح من TGPU.'
+      moringaTitle:'مورينغا',
+      moringaAlt:'صورة فعلية لعبوة Softgel Moringa Oleifera التي تحتوي على 60 كبسولة من مخزون العائلة.'
     }
   };
 
   if(typeof translations!=='undefined') Object.keys(extra).forEach(lang=>Object.assign(translations[lang],extra[lang]));
 
-  const addPrice=(card,price)=>{
-    if(!card) return;
-    const copy=card.querySelector('.product-copy');
-    if(copy&&!copy.querySelector('.product-price')) copy.insertAdjacentHTML('beforeend',`<div class="product-price"><span data-i18n="plannedPrice">Harga jualan cadangan</span><strong>RM${price}</strong></div>`);
-  };
-
+  const inner=document.querySelector('.products-inner');
   const grid=document.querySelector('.product-grid');
+  const heading=document.querySelector('.section-heading');
+  const note=document.querySelector('.concept-note');
+  if(heading) heading.remove();
+  if(note) note.remove();
+
   if(grid){
-    const cards=[...grid.querySelectorAll('.product-card')];
-    addPrice(cards[0],60);
+    grid.outerHTML=`
+      <section class="tgpu-poster-showcase" aria-label="TGPU Naturals collection">
+        <div class="poster-topline">
+          <div class="poster-brand-block">
+            <div class="poster-brand-title">TGPU NATURALS</div>
+            <div class="poster-brand-sub" data-i18n="posterTagline">NATURAL WELLNESS • A HEALTHIER TOMORROW</div>
+          </div>
+          <div class="poster-motto" data-i18n="posterMotto">Nature’s Goodness For A Better You</div>
+          <div class="poster-crest"><img src="../assets/tgpu-logo.png" alt="TGPU"><span>TGPU<br><small>TOK GURU<br>PULAU UBI</small></span></div>
+        </div>
 
-    const tongkat=cards[1];
-    if(tongkat){
-      const photo=tongkat.querySelector('.product-photo');
-      const img=photo&&photo.querySelector('img');
-      if(img){img.src='assets/tongkat-actual.webp?v=20260910';img.classList.add('actual-photo');img.setAttribute('data-i18n-alt','tongkatAlt');}
-      const oldBadge=photo&&photo.querySelector('.concept-badge');
-      if(oldBadge){oldBadge.className='actual-badge';oldBadge.setAttribute('data-i18n','actualVisualBadge');oldBadge.textContent='BERDASARKAN PRODUK SEBENAR';}
-      const copy=tongkat.querySelector('.product-copy');
-      if(copy&&!copy.querySelector('.product-price')) copy.insertAdjacentHTML('beforeend','<div class="product-price"><span data-i18n="plannedPrice">Harga jualan cadangan</span><strong>RM50</strong></div><p class="price-note" data-i18n="sourceStickerNote">Foto stok sebenar keluarga. Pelekat harga pada foto Tongkat Ali ialah pelekat kedai/sumber; RM50 ialah harga jualan cadangan TGPU.</p>');
-    }
+        <div class="poster-product-grid">
+          <article class="poster-product">
+            <div class="poster-photo-wrap moringa-bg"><img src="assets/moringa-actual.webp?v=20260910" alt="Moringa" data-i18n-alt="moringaAlt"></div>
+            <h3 data-i18n="moringaTitle">Moringa</h3><p class="botanical" dir="ltr">Moringa oleifera</p>
+            <p class="poster-desc" data-i18n="posterMoringaDesc">Moringa oleifera is a tropical plant with a long history of use in food and traditional practices in many regions.</p>
+            <div class="poster-price">RM 140</div><div class="poster-softgel" data-i18n="softgel">60 Softgel</div>
+          </article>
+          <article class="poster-product">
+            <div class="poster-photo-wrap tongkat-bg"><img src="assets/tongkat-actual.webp?v=20260910" alt="Tongkat Ali"></div>
+            <h3 data-i18n="tongkatTitle">Tongkat Ali</h3><p class="botanical" dir="ltr">Eurycoma longifolia</p>
+            <p class="poster-desc" data-i18n="posterTongkatDesc">Eurycoma longifolia is a Southeast Asian botanical well known in the region’s traditional herbal culture.</p>
+            <div class="poster-price">RM 60</div><div class="poster-softgel" data-i18n="softgel">60 Softgel</div>
+          </article>
+          <article class="poster-product">
+            <div class="poster-photo-wrap sacha-bg"><img class="contained" src="assets/sacha-inchi.webp?v=20260909" alt="Sacha Inchi"></div>
+            <h3 data-i18n="sachiTitle">Sacha Inchi</h3><p class="botanical" dir="ltr">Plukenetia volubilis</p>
+            <p class="poster-desc" data-i18n="posterSachaDesc">Plukenetia volubilis is a seed-bearing plant from tropical South America, commonly known as Sacha Inchi.</p>
+            <div class="poster-price">RM 60</div><div class="poster-softgel" data-i18n="softgel">60 Softgel</div>
+          </article>
+          <article class="poster-product">
+            <div class="poster-photo-wrap kunyit-bg"><img class="contained" src="assets/kunyit.webp?v=20260909" alt="Kunyit Hitam"></div>
+            <h3 data-i18n="kunyitTitle">Kunyit Hitam</h3><p class="botanical" dir="ltr">Curcuma caesia</p>
+            <p class="poster-desc" data-i18n="posterKunyitDesc">Curcuma caesia is a dark-coloured rhizome known as Kunyit Hitam and associated with local herbal traditions.</p>
+            <div class="poster-price">RM 60</div><div class="poster-softgel" data-i18n="softgel">60 Softgel</div>
+          </article>
+        </div>
 
-    addPrice(cards[2],65);
-
-    if(!document.getElementById('product-moringa')) grid.insertAdjacentHTML('beforeend','<article class="product-card" id="product-moringa"><div class="product-photo"><img class="actual-photo" src="assets/moringa-actual.webp?v=20260910" width="320" height="425" loading="lazy" decoding="async" alt="Foto sebenar botol Softgel Moringa Oleifera 60 softgel daripada stok keluarga." data-i18n-alt="moringaAlt"><span data-i18n="actualVisualBadge" class="actual-badge">BERDASARKAN PRODUK SEBENAR</span></div><div class="product-copy"><h3><span data-i18n="moringaTitle">Moringa</span></h3><a href="#ingredient-moringa" class="product-link" aria-label="Apakah Moringa?" data-i18n-aria="whatMoringa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><h4 data-i18n="whatMoringa">Apakah Moringa?</h4><p data-i18n="moringaDesc">Moringa oleifera ialah tumbuhan yang ditanam secara meluas di kawasan tropika dan subtropika.</p><div class="product-price"><span data-i18n="plannedPrice">Harga jualan cadangan</span><strong>RM140</strong></div></div></article>');
+        <div class="poster-benefits">
+          <div><span class="benefit-icon">❧</span><span data-i18n="posterNatural">NATURAL INGREDIENTS</span></div>
+          <div><span class="benefit-icon">◇</span><span data-i18n="posterFamily">FAMILY VALUES</span></div>
+          <div><span class="benefit-icon">☘</span><span data-i18n="posterInfo">CLEAR INFORMATION</span></div>
+          <div><span class="benefit-icon">◌</span><span data-i18n="posterTomorrow">A BRIGHTER TOMORROW</span></div>
+          <div class="poster-sign" data-i18n="posterSign">By TGPU Naturals\nRooted in Tradition\nGrowing for Generations</div>
+        </div>
+      </section>`;
   }
 
   const learnGrid=document.querySelector('.learn-grid');
