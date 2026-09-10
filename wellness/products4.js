@@ -52,9 +52,17 @@
 
   if(typeof translations!=='undefined') Object.keys(extra).forEach(lang=>Object.assign(translations[lang],extra[lang]));
 
+  const addPrice=(card,price)=>{
+    if(!card) return;
+    const copy=card.querySelector('.product-copy');
+    if(copy&&!copy.querySelector('.product-price')) copy.insertAdjacentHTML('beforeend',`<div class="product-price"><span data-i18n="plannedPrice">Harga jualan cadangan</span><strong>RM${price}</strong></div>`);
+  };
+
   const grid=document.querySelector('.product-grid');
   if(grid){
     const cards=[...grid.querySelectorAll('.product-card')];
+    addPrice(cards[0],60);
+
     const tongkat=cards[1];
     if(tongkat){
       const photo=tongkat.querySelector('.product-photo');
@@ -65,6 +73,8 @@
       const copy=tongkat.querySelector('.product-copy');
       if(copy&&!copy.querySelector('.product-price')) copy.insertAdjacentHTML('beforeend','<div class="product-price"><span data-i18n="plannedPrice">Harga jualan cadangan</span><strong>RM50</strong></div><p class="price-note" data-i18n="sourceStickerNote">Foto stok sebenar keluarga. Pelekat harga pada foto Tongkat Ali ialah pelekat kedai/sumber; RM50 ialah harga jualan cadangan TGPU.</p>');
     }
+
+    addPrice(cards[2],65);
 
     if(!document.getElementById('product-moringa')) grid.insertAdjacentHTML('beforeend','<article class="product-card" id="product-moringa"><div class="product-photo"><img class="actual-photo" src="assets/moringa-actual.webp?v=20260910" width="320" height="425" loading="lazy" decoding="async" alt="Foto sebenar botol Softgel Moringa Oleifera 60 softgel daripada stok keluarga." data-i18n-alt="moringaAlt"><span data-i18n="actualVisualBadge" class="actual-badge">BERDASARKAN PRODUK SEBENAR</span></div><div class="product-copy"><h3><span data-i18n="moringaTitle">Moringa</span></h3><a href="#ingredient-moringa" class="product-link" aria-label="Apakah Moringa?" data-i18n-aria="whatMoringa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><h4 data-i18n="whatMoringa">Apakah Moringa?</h4><p data-i18n="moringaDesc">Moringa oleifera ialah tumbuhan yang ditanam secara meluas di kawasan tropika dan subtropika.</p><div class="product-price"><span data-i18n="plannedPrice">Harga jualan cadangan</span><strong>RM140</strong></div></div></article>');
   }
