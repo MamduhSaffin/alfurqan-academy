@@ -1,0 +1,13 @@
+.surau-feature{position:absolute;z-index:3;top:96px;right:0;width:228px;margin:0;overflow:hidden;border:1px solid #b79150;border-radius:18px;background:#fffaf2f2;box-shadow:0 14px 34px #0c2f2230;backdrop-filter:blur(5px)}
+.surau-feature img{display:block;width:100%;height:205px;object-fit:cover;object-position:center 44%;background:#e8e0d0}
+.surau-feature figcaption{padding:13px 14px 15px;text-align:center;background:linear-gradient(145deg,#fffdf8f5,#f0e6d2f5);color:#514a3d}
+.surau-feature strong{display:block;color:var(--green);font-size:18px;line-height:1.18;font-weight:600}
+.surau-feature span{display:block;margin-top:5px;font:12px/1.4 var(--sans);color:#665d4c}
+.surau-feature a{display:inline-flex;align-items:center;justify-content:center;margin-top:9px;min-height:30px;font:700 12px/1.25 var(--sans);color:#765622;text-decoration:underline;text-underline-offset:3px}
+html[dir="rtl"] .surau-feature{right:auto;left:0}
+html[lang="ar"] .surau-feature strong{font-family:'Noto Naskh Arabic',serif;font-size:20px;line-height:1.35}
+html[lang="ar"] .surau-feature span,html[lang="ar"] .surau-feature a{font-family:'Noto Naskh Arabic',serif;font-size:14px;line-height:1.45}
+@media(max-width:1200px){.surau-feature{top:92px;width:205px}.surau-feature img{height:185px}.surau-feature strong{font-size:17px}.surau-feature span{font-size:11px}}
+@media(max-width:1000px){.surau-feature{top:38px;width:190px}.surau-feature img{height:168px}.surau-feature figcaption{padding:11px 12px 13px}.surau-feature strong{font-size:16px}.surau-feature a{font-size:11px}}
+@media(max-width:700px){.hero:has(.surau-feature),.hero:has(.surau-feature) .hero-inner{min-height:900px}.hero:has(.surau-feature) .hero-inner{padding-bottom:445px}.surau-feature{top:auto;right:auto;left:50%;bottom:26px;width:min(320px,calc(100% - 38px));transform:translateX(-50%);border-radius:16px}.surau-feature img{height:190px;object-position:center 43%}.surau-feature figcaption{padding:12px 14px 14px}.surau-feature strong{font-size:18px}.surau-feature span{font-size:12px}.surau-feature a{font-size:12px}html[dir="rtl"] .surau-feature{right:auto;left:50%;transform:translateX(-50%)}html[dir="rtl"] .hero:has(.surau-feature) .hero-inner{padding-bottom:455px}}
+@media(max-width:380px){.hero:has(.surau-feature),.hero:has(.surau-feature) .hero-inner{min-height:925px}.surau-feature{width:calc(100% - 30px);bottom:20px}.surau-feature img{height:178px}}
