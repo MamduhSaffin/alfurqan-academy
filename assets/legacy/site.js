@@ -8,8 +8,10 @@
  window.matchMedia('(min-width:701px)').addEventListener('change',close);
  document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 
- // Place the authentic Surau Tok Guru Pulau Ubi photograph prominently on the landing page.
- const hero=document.querySelector('.hero'),heroInner=hero?.querySelector('.hero-inner');
+ // Place the authentic Surau Tok Guru Pulau Ubi photograph only on the three landing pages.
+ const page=(location.pathname.split('/').pop()||'index.html').toLowerCase();
+ const isLegacyHome=['index.html','en.html','ar.html'].includes(page);
+ const hero=isLegacyHome?document.querySelector('.hero'):null,heroInner=hero?.querySelector('.hero-inner');
  if(heroInner&&!heroInner.querySelector('.surau-feature')){
    const style=document.createElement('link');
    style.rel='stylesheet';style.href='assets/legacy/surau-feature.css';
@@ -36,9 +38,9 @@
    image.src='assets/legacy/surau-tok-guru-pulau-ubi.jpg';image.width=235;image.height=300;image.alt=copy.alt;image.loading='eager';image.decoding='async';
    const caption=document.createElement('figcaption');
    const strong=document.createElement('strong');strong.textContent=copy.name;
-   const place=document.createElement('span');place.textContent=copy.place;
+   const placeText=document.createElement('span');placeText.textContent=copy.place;
    const link=document.createElement('a');link.href='https://omiw.com.my/Web/senarai-aktiviti/';link.target='_blank';link.rel='noopener';link.textContent=copy.link;
-   caption.append(strong,place,link);figure.append(image,caption);
+   caption.append(strong,placeText,link);figure.append(image,caption);
    const side=hero.querySelector('.hero-side');if(side)side.hidden=true;
    heroInner.appendChild(figure);
  }
