@@ -10,103 +10,18 @@
     window.matchMedia('(min-width:701px)').addEventListener('change',close);
   }
   document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
-
   const page=(location.pathname.split('/').pop()||'index.html').toLowerCase();
   const isLegacyHome=['index.html','en.html','ar.html'].includes(page);
   const hero=isLegacyHome?document.querySelector('.hero'):null;
   const about=isLegacyHome?document.querySelector('.about'):null;
-
-  const loadSurauImage=()=>new Promise(resolve=>{
-    if(window.TGPU_SURAU_IMAGE){resolve(window.TGPU_SURAU_IMAGE);return;}
-    const script=document.createElement('script');
-    script.src='assets/legacy/surau-inline.js?v=20260912b';
-    script.async=true;
-    script.onload=()=>resolve(window.TGPU_SURAU_IMAGE||'');
-    script.onerror=()=>resolve('');
-    document.head.appendChild(script);
-  });
-
-  const buildLegacy=surauImage=>{
+  const buildLegacy=()=>{
     if(!hero||!about||document.querySelector('.legacy-showcase'))return;
-    const style=document.createElement('link');
-    style.rel='stylesheet';
-    style.href='assets/legacy/surau-feature.css?v=20260912b';
-    document.head.appendChild(style);
-
+    const style=document.createElement('link');style.rel='stylesheet';style.href='assets/legacy/surau-feature.css?v=20260912c';document.head.appendChild(style);
     const lang=(document.documentElement.lang||'ms').toLowerCase();
-    const copy=lang.startsWith('ar')?{
-      surauEyebrow:'جذور TGPU',
-      surauTitle:'المكان الذي يستمر فيه الإرث',
-      surauText:'يمثل سوراو توك غورو بولاو أوبي جذور الأسرة والمجتمع والبيئة التي يجتمع فيها الإيمان والعلم وخدمة الناس. وهو تذكير بأن الرسالة الكبيرة قد تبدأ من مجتمع صغير، ثم تمتد آثارها إلى الأجيال القادمة.',
-      surauName:'سوراو توك غورو بولاو أوبي',
-      surauPlace:'كامبونغ تلاڬا لاناس · ڤڠكلن كوبور · تومڤت، كلنتن',
-      surauLink:'عرض أنشطة المصلى',
-      surauAlt:'سوراو توك غورو بولاو أوبي في كامبونغ تلاڬا لاناس، ڤڠكلن كوبور، تومڤت، كلنتن.',
-      founderEyebrow:'إرث عائلي',
-      founderTitle:'توك غورو بولاو أوبي',
-      founderText:'ترتبط قصة TGPU بجدّنا الراحل الذي نعتز بإرثه في العلم والتربية الإسلامية والتواضع وخدمة المجتمع. لا نريد أن يبقى هذا الإرث مجرد ذكرى؛ بل نسعى إلى مواصلة القيم التي حملها بما يناسب الجيل الجديد.',
-      founderQuote:'لسنا نريد أن نحفظ ذكراه فحسب، بل نطمح إلى مواصلة الرسالة والقيم التي تركها لنا.',
-      founderAlt:'الصورة العائلية الأصلية للراحل توك غورو بولاو أوبي.'
-    }:lang.startsWith('en')?{
-      surauEyebrow:'THE ROOTS OF TGPU',
-      surauTitle:'Where the legacy continues',
-      surauText:'Surau Tok Guru Pulau Ubi represents our family roots, our community and a place where faith, learning and service come together. It reminds us that a meaningful mission can begin in a small community and continue through the generations that follow.',
-      surauName:'Surau Tok Guru Pulau Ubi',
-      surauPlace:'Kg Telaga Lanas · Pengkalan Kubor · Tumpat, Kelantan',
-      surauLink:'View surau activities',
-      surauAlt:'Surau Tok Guru Pulau Ubi in Kampung Telaga Lanas, Pengkalan Kubor, Tumpat, Kelantan.',
-      founderEyebrow:'A FAMILY LEGACY',
-      founderTitle:'Tok Guru Pulau Ubi',
-      founderText:'The story of TGPU is closely connected to our late grandfather and the values represented by his life: knowledge, Islamic education, humility and service to the community. We do not want this legacy to remain only as a memory; we hope to carry its values forward in ways that remain meaningful to a new generation.',
-      founderQuote:'We do not seek merely to preserve his memory. We hope to continue the spirit behind it.',
-      founderAlt:'Original family portrait of the late Tok Guru Pulau Ubi.'
-    }:{
-      surauEyebrow:'AKAR TGPU',
-      surauTitle:'Di sinilah legasi terus hidup',
-      surauText:'Surau Tok Guru Pulau Ubi melambangkan akar keluarga, masyarakat dan sebuah ruang yang menghimpunkan iman, ilmu serta khidmat. Ia mengingatkan kami bahawa sebuah misi yang bermakna boleh bermula daripada komuniti kecil, kemudian diteruskan kepada generasi yang seterusnya.',
-      surauName:'Surau Tok Guru Pulau Ubi',
-      surauPlace:'Kg Telaga Lanas · Pengkalan Kubor · Tumpat, Kelantan',
-      surauLink:'Lihat aktiviti surau',
-      surauAlt:'Surau Tok Guru Pulau Ubi di Kampung Telaga Lanas, Pengkalan Kubor, Tumpat, Kelantan.',
-      founderEyebrow:'SEBUAH LEGASI KELUARGA',
-      founderTitle:'Tok Guru Pulau Ubi',
-      founderText:'Kisah TGPU berkait rapat dengan arwah datuk kami serta nilai yang dibawa melalui kehidupan beliau: ilmu, pendidikan Islam, kerendahan hati dan khidmat kepada masyarakat. Kami tidak mahu legasi ini tinggal sebagai kenangan semata-mata; kami mahu meneruskan nilainya dalam bentuk yang bermakna untuk generasi baharu.',
-      founderQuote:'Kami bukan sekadar mahu mengenang beliau. Kami mahu meneruskan semangat dan nilai yang ditinggalkan.',
-      founderAlt:'Potret keluarga asal arwah Tok Guru Pulau Ubi.'
-    };
-
-    const showcase=document.createElement('section');
-    showcase.className='legacy-showcase';
-    showcase.setAttribute('aria-label',copy.surauName);
-    showcase.innerHTML=`<div class="wrap legacy-showcase-grid">
-      <figure class="surau-portrait">
-        <div class="surau-photo-frame"><img width="940" height="620" alt="${copy.surauAlt}" loading="eager" decoding="async"></div>
-        <figcaption><strong>${copy.surauName}</strong><span>${copy.surauPlace}</span></figcaption>
-      </figure>
-      <div class="surau-story"><p class="eyebrow">${copy.surauEyebrow}</p><h2>${copy.surauTitle}</h2><span class="legacy-gold-rule" aria-hidden="true"></span><p>${copy.surauText}</p><a class="legacy-text-link" href="https://omiw.com.my/Web/senarai-aktiviti/" target="_blank" rel="noopener">${copy.surauLink}<span aria-hidden="true">↗</span></a></div>
-    </div>`;
-    const surauImg=showcase.querySelector('.surau-photo-frame img');
-    if(surauImage)surauImg.src=surauImage;
-    hero.insertAdjacentElement('afterend',showcase);
-
-    const founder=document.createElement('section');
-    founder.className='legacy-founder no-portrait';
-    founder.innerHTML=`<div class="wrap legacy-founder-grid">
-      <figure class="founder-photo" hidden><div class="founder-photo-frame"><img alt="${copy.founderAlt}" decoding="async"></div></figure>
-      <div class="founder-copy"><p class="eyebrow">${copy.founderEyebrow}</p><h2>${copy.founderTitle}</h2><span class="legacy-gold-rule" aria-hidden="true"></span><p>${copy.founderText}</p><blockquote>${copy.founderQuote}</blockquote></div>
-    </div>`;
-    showcase.insertAdjacentElement('afterend',founder);
-
-    const portraitImg=founder.querySelector('.founder-photo img');
-    const portraitFigure=founder.querySelector('.founder-photo');
-    portraitImg.addEventListener('load',()=>{portraitFigure.hidden=false;founder.classList.remove('no-portrait');},{once:true});
-    portraitImg.addEventListener('error',()=>{portraitFigure.hidden=true;founder.classList.add('no-portrait');},{once:true});
-    portraitImg.src='assets/legacy/tok-guru-pulau-ubi.jpg?v=20260912b';
+    const copy=lang.startsWith('ar')?{surauEyebrow:'جذور TGPU',surauTitle:'المكان الذي يستمر فيه الإرث',surauText:'يمثل سوراو توك غورو بولاو أوبي جذور الأسرة والمجتمع والبيئة التي يجتمع فيها الإيمان والعلم وخدمة الناس. وهو تذكير بأن الرسالة الكبيرة قد تبدأ من مجتمع صغير، ثم تمتد آثارها إلى الأجيال القادمة.',surauName:'سوراو توك غورو بولاو أوبي',surauPlace:'كامبونغ تلاڬا لاناس · ڤڠكلن كوبور · تومڤت، كلنتن',surauLink:'عرض أنشطة المصلى',surauAlt:'سوراو توك غورو بولاو أوبي في كامبونغ تلاڬا لاناس، ڤڠكلن كوبور، تومڤت، كلنتن.',founderEyebrow:'إرث عائلي',founderTitle:'توك غورو بولاو أوبي',founderText:'ترتبط قصة TGPU بجدّنا الراحل الذي نعتز بإرثه في العلم والتربية الإسلامية والتواضع وخدمة المجتمع. لا نريد أن يبقى هذا الإرث مجرد ذكرى؛ بل نسعى إلى مواصلة القيم التي حملها بما يناسب الجيل الجديد.',founderQuote:'لسنا نريد أن نحفظ ذكراه فحسب، بل نطمح إلى مواصلة الرسالة والقيم التي تركها لنا.',founderAlt:'الصورة العائلية الأصلية للراحل توك غورو بولاو أوبي.'}:lang.startsWith('en')?{surauEyebrow:'THE ROOTS OF TGPU',surauTitle:'Where the legacy continues',surauText:'Surau Tok Guru Pulau Ubi represents our family roots, our community and a place where faith, learning and service come together. It reminds us that a meaningful mission can begin in a small community and continue through the generations that follow.',surauName:'Surau Tok Guru Pulau Ubi',surauPlace:'Kg Telaga Lanas · Pengkalan Kubor · Tumpat, Kelantan',surauLink:'View surau activities',surauAlt:'Surau Tok Guru Pulau Ubi in Kampung Telaga Lanas, Pengkalan Kubor, Tumpat, Kelantan.',founderEyebrow:'A FAMILY LEGACY',founderTitle:'Tok Guru Pulau Ubi',founderText:'The story of TGPU is closely connected to our late grandfather and the values represented by his life: knowledge, Islamic education, humility and service to the community. We do not want this legacy to remain only as a memory; we hope to carry its values forward in ways that remain meaningful to a new generation.',founderQuote:'We do not seek merely to preserve his memory. We hope to continue the spirit behind it.',founderAlt:'Original family portrait of the late Tok Guru Pulau Ubi.'}:{surauEyebrow:'AKAR TGPU',surauTitle:'Di sinilah legasi terus hidup',surauText:'Surau Tok Guru Pulau Ubi melambangkan akar keluarga, masyarakat dan sebuah ruang yang menghimpunkan iman, ilmu serta khidmat. Ia mengingatkan kami bahawa sebuah misi yang bermakna boleh bermula daripada komuniti kecil, kemudian diteruskan kepada generasi yang seterusnya.',surauName:'Surau Tok Guru Pulau Ubi',surauPlace:'Kg Telaga Lanas · Pengkalan Kubor · Tumpat, Kelantan',surauLink:'Lihat aktiviti surau',surauAlt:'Surau Tok Guru Pulau Ubi di Kampung Telaga Lanas, Pengkalan Kubor, Tumpat, Kelantan.',founderEyebrow:'SEBUAH LEGASI KELUARGA',founderTitle:'Tok Guru Pulau Ubi',founderText:'Kisah TGPU berkait rapat dengan arwah datuk kami serta nilai yang dibawa melalui kehidupan beliau: ilmu, pendidikan Islam, kerendahan hati dan khidmat kepada masyarakat. Kami tidak mahu legasi ini tinggal sebagai kenangan semata-mata; kami mahu meneruskan nilainya dalam bentuk yang bermakna untuk generasi baharu.',founderQuote:'Kami bukan sekadar mahu mengenang beliau. Kami mahu meneruskan semangat dan nilai yang ditinggalkan.',founderAlt:'Potret keluarga asal arwah Tok Guru Pulau Ubi.'};
+    const showcase=document.createElement('section');showcase.className='legacy-showcase';showcase.setAttribute('aria-label',copy.surauName);showcase.innerHTML=`<div class="wrap legacy-showcase-grid"><figure class="surau-portrait"><div class="surau-photo-frame"><img src="assets/legacy/surau-tok-guru-pulau-ubi.webp?v=20260912c" width="520" height="690" alt="${copy.surauAlt}" loading="eager" decoding="async"></div><figcaption><strong>${copy.surauName}</strong><span>${copy.surauPlace}</span></figcaption></figure><div class="surau-story"><p class="eyebrow">${copy.surauEyebrow}</p><h2>${copy.surauTitle}</h2><span class="legacy-gold-rule" aria-hidden="true"></span><p>${copy.surauText}</p><a class="legacy-text-link" href="https://omiw.com.my/Web/senarai-aktiviti/" target="_blank" rel="noopener">${copy.surauLink}<span aria-hidden="true">↗</span></a></div></div>`;hero.insertAdjacentElement('afterend',showcase);
+    const founder=document.createElement('section');founder.className='legacy-founder';founder.innerHTML=`<div class="wrap legacy-founder-grid"><figure class="founder-photo"><div class="founder-photo-frame"><img src="assets/legacy/tok-guru-pulau-ubi.webp?v=20260912c" width="500" height="500" alt="${copy.founderAlt}" decoding="async"></div></figure><div class="founder-copy"><p class="eyebrow">${copy.founderEyebrow}</p><h2>${copy.founderTitle}</h2><span class="legacy-gold-rule" aria-hidden="true"></span><p>${copy.founderText}</p><blockquote>${copy.founderQuote}</blockquote></div></div>`;showcase.insertAdjacentElement('afterend',founder);
   };
-
-  if(isLegacyHome)loadSurauImage().then(buildLegacy);
-
-  const routeHash=()=>{if(document.body.dataset.classes&&['#register','#pricing','#faq','#international','#ssm'].includes(location.hash))location.replace(document.body.dataset.classes+location.hash);};
-  routeHash();
-  window.addEventListener('hashchange',routeHash);
+  if(isLegacyHome)buildLegacy();
+  const routeHash=()=>{if(document.body.dataset.classes&&['#register','#pricing','#faq','#international','#ssm'].includes(location.hash))location.replace(document.body.dataset.classes+location.hash);};routeHash();window.addEventListener('hashchange',routeHash);
 })();
