@@ -1,0 +1,1 @@
+verified JPEG source embedded in surau-inline.js; binary asset repair pending
